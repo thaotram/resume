@@ -1,0 +1,22 @@
+{
+  "name": "nextjs-web",
+  "version": "1.0.0",
+  "description": "Next.js Web",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaotram/nextjs-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thaotram/nextjs-web/issues"
+  },
+  "homepage": "https://github.com/thaotram/nextjs-web#readme",
+  "author": "thaotram <thaotram.april@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "nextjs"
+  ],
+  "scripts": {},
+  "engines": {
+    "node": ">=12"
+  }
+}
