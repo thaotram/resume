@@ -1,6 +1,7 @@
 /node_modules
 /dist
 /build
+/.next
 
 /coverage
 /.nyc_output
@@ -16,6 +17,7 @@
 /.yarnclean
 /LICENSE
 /yarn.lock
+
 
 *.svg
 *.ttf

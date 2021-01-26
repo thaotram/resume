@@ -16,6 +16,9 @@
     "nextjs"
   ],
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier ** --write",
     "test": "run-s test:*",
@@ -23,6 +26,11 @@
   },
   "engines": {
     "node": ">=12"
+  },
+  "dependencies": {
+    "next": "^10.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@culur/prettier-config": "^0.1.0",

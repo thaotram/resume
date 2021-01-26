@@ -2,6 +2,7 @@
     "files.exclude": {
         "**/.git": true,
         "**/.vscode": true,
+        "**/.next": true,
         "**/build": true,
         "**/node_modules": true,
         "**/yarn-error.log": true
