@@ -21,6 +21,7 @@
     "start": "next start",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier ** --write",
+    "tailwind": "tailwind-config-viewer -o -p 4000",
     "test": "run-s test:*",
     "test:prettier": "prettier ** --list-different"
   },
@@ -47,6 +48,7 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
+    "tailwind-config-viewer": "^1.5.0",
     "tailwindcss": "^2.0.2",
     "typescript": "^4.1.3"
   }
