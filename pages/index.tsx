@@ -1,12 +1,13 @@
 import Head from 'next/head';
+import Resume from '../components/Resume/Resume';
 
 export default function Index() {
     return (
-        <div>
+        <>
             <Head>
-                <title>Create Next App</title>
+                <title>thaotram</title>
             </Head>
-            <div>Index</div>
-        </div>
+            <Resume />
+        </>
     );
 }
