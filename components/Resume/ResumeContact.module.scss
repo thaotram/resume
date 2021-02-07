@@ -1,0 +1,7 @@
+.contact {
+    @apply text-right;
+
+    > div:first-child::after {
+        @apply -top-24;
+    }
+}
