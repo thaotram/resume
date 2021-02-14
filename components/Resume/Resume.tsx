@@ -5,6 +5,7 @@ import ResumeProfile from './ResumeProfile';
 import ResumeEducation from './ResumeEducation';
 import ResumeExperience from './ResumeExperience';
 import ResumeSkill from './ResumeSkills';
+import ResumeAward from './ResumeAward';
 
 export default function Resume() {
     return (
@@ -17,6 +18,7 @@ export default function Resume() {
                 <ResumeEducation />
                 <ResumeExperience />
                 <ResumeSkill />
+                <ResumeAward />
             </div>
         </div>
     );
