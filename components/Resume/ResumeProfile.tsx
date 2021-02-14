@@ -1,9 +1,9 @@
 import GridContentWrapper from '../Utils/GridContentWrapper';
 import GridContent from '../Utils/GridContent';
 
-export default function ResumeProfile() {
+export default function ResumeProfile(props: { className?: string }) {
     return (
-        <GridContentWrapper title="PROFILE">
+        <GridContentWrapper title="PROFILE" className={props.className}>
             <GridContent>
                 An energetic, enthusiastic and responsible individual looking
                 for front-end developer position. Hard-working and willing to

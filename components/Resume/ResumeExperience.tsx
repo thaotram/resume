@@ -1,9 +1,9 @@
 import GridContentWrapper from '../Utils/GridContentWrapper';
 import GridContent from '../Utils/GridContent';
 
-export default function ResumeExperience() {
+export default function ResumeExperience(props: { className?: string }) {
     return (
-        <GridContentWrapper title="Experience">
+        <GridContentWrapper title="Experience" className={props.className}>
             <GridContent type="dot">
                 <div className="justify-between text-base font-semibold md:flex">
                     <div>UNIVERSITY OF INFORMATION TECHNOLOGY</div>

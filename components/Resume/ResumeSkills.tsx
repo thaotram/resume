@@ -2,9 +2,9 @@ import GridContentWrapper from '../Utils/GridContentWrapper';
 import GridContent from '../Utils/GridContent';
 import ProgressBar from '../Utils/ProgressBar';
 
-export default function ResumeSkill() {
+export default function ResumeSkill(props: { className?: string }) {
     return (
-        <GridContentWrapper title="skills">
+        <GridContentWrapper title="skills" className={props.className}>
             <GridContent type="dot">
                 <div className="text-base font-semibold tracking-widest uppercase">
                     Profressional

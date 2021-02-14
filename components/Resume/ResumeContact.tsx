@@ -6,10 +6,11 @@ import {
 import GridContent from '../Utils/GridContent';
 import GridContentWrapper from '../Utils/GridContentWrapper';
 import styles from './ResumeContact.module.scss';
+import cn from 'classnames';
 
-export default function ResumeContact() {
+export default function ResumeContact(props: { className?: string }) {
     return (
-        <GridContentWrapper className={styles.contact}>
+        <GridContentWrapper className={cn(styles.contact, props.className)}>
             <GridContent type={faPhoneAlt}>
                 <a href="tel:0343391712">034-339-1712</a>
             </GridContent>

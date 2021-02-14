@@ -1,9 +1,9 @@
 import GridContentWrapper from '../Utils/GridContentWrapper';
 import GridContent from '../Utils/GridContent';
 
-export default function ResumeEducation() {
+export default function ResumeEducation(props: { className?: string }) {
     return (
-        <GridContentWrapper title="EDUCATION">
+        <GridContentWrapper title="EDUCATION" className={props.className}>
             <GridContent>
                 <div className="text-base font-semibold">
                     UNIVERSITY OF INFORMATION TECHNOLOGY (UIT)
