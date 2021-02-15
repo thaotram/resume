@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
     purge: ['./pages/**/*.{jsx,tsx}', './components/**/*.{jsx,tsx}'],
     darkMode: false, // or 'media' or 'class'
@@ -37,7 +39,21 @@ module.exports = {
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            padding: ['important'],
+            margin: ['important'],
+        },
     },
-    plugins: [],
+    plugins: [
+        plugin(({ addVariant }) => {
+            addVariant('important', ({ container }) => {
+                container.walkRules(rule => {
+                    rule.selector = `.\\!${rule.selector.slice(1)}`;
+                    rule.walkDecls(decl => {
+                        decl.important = true;
+                    });
+                });
+            });
+        }),
+    ],
 };
