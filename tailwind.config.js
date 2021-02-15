@@ -2,9 +2,37 @@ module.exports = {
     purge: ['./pages/**/*.{jsx,tsx}', './components/**/*.{jsx,tsx}'],
     darkMode: false, // or 'media' or 'class'
     theme: {
+        screens: {
+            xs: '420px',
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px',
+        },
         extend: {
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: 0,
+                    sm: '2rem',
+                    lg: '4rem',
+                    xl: '8rem',
+                },
+            },
             fontFamily: {
                 sans: ['Raleway', 'sans-serif'],
+            },
+            spacing: {
+                '1.5px': '1.5px',
+                17: '4.25rem',
+                '-title': '-0.4em',
+                '-widest': '-0.1em',
+            },
+            letterSpacing: {
+                title: '0.4em',
+            },
+            gridTemplateColumns: {
+                content: '2.5rem 1fr',
             },
         },
     },
