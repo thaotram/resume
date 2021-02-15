@@ -1,0 +1,9 @@
+.grid-content {
+    @apply grid-cols-content grid;
+    @apply mx-12 my-6 lg:mt-12;
+
+    &-title {
+        @apply col-span-2 mb-4;
+        @apply text-lg font-bold tracking-title uppercase;
+    }
+}

@@ -1,0 +1,80 @@
+.line {
+    @apply relative;
+
+    &::after {
+        content: '';
+
+        @apply absolute inset-x-0 inset-y-0;
+        @apply bg-gray-800;
+        @apply w-0.5 mx-auto;
+    }
+
+    &.noLine::after {
+        @apply hidden;
+    }
+
+    &.dot {
+        &::before {
+            content: '';
+
+            @apply absolute inset-x-0;
+            @apply w-3 h-3 mx-auto mt-1.5;
+            @apply transform rotate-45;
+            @apply bg-gray-800;
+            @apply transition duration-200;
+        }
+
+        &:hover::before {
+            @apply -rotate-45;
+        }
+
+        &::after {
+            @apply top-6;
+        }
+    }
+
+    &.slash {
+        &::before {
+            content: '';
+
+            @apply absolute inset-x-0 left-1/2 -top-1;
+            @apply transform rotate-45 origin-top-left;
+            @apply w-5 h-1.5px rounded-full;
+            @apply bg-gray-800;
+        }
+    }
+
+    > svg {
+        @apply absolute inset-x-0 z-10;
+        @apply top-0.5;
+        @apply mx-auto;
+        @apply bg-white;
+
+        box-shadow: 0 0 0 0.5rem white;
+    }
+
+    &.base {
+        > svg {
+            @apply top-1;
+        }
+    }
+
+    &.bottom {
+        > svg {
+            @apply bottom-3.5 top-auto;
+        }
+
+        &:nth-last-child(2) > svg {
+            @apply bottom-0.5;
+        }
+    }
+}
+
+.content {
+    @apply text-sm ml-1 mb-3;
+    @apply self-end;
+
+    &:last-child {
+        @apply mb-0;
+    }
+}
