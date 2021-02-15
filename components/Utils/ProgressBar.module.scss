@@ -1,0 +1,11 @@
+.progress {
+    @apply flex w-full overflow-hidden;
+    @apply bg-gray-200;
+
+    min-width: 9rem;
+    height: 8px;
+
+    &-bar {
+        @apply bg-gray-500;
+    }
+}
