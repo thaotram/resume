@@ -1,6 +1,6 @@
 .name {
     @apply text-right;
-    @apply mb-2;
+    @apply mb-2 lg:mr-0;
 
     > div:first-child::after {
         @apply -top-24 -bottom-7;

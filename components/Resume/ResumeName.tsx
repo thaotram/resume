@@ -5,7 +5,7 @@ import cn from 'classnames';
 
 export default function ResumeName(props: { className?: string }) {
     return (
-        <div className={cn('pt-14 text-right', props.className)}>
+        <div className={cn('pt-12 text-right', props.className)}>
             <GridContentWrapper className={cn(styles.name, props.className)}>
                 <GridContent>
                     <div className="text-lg font-medium tracking-title -mr-title">
@@ -16,7 +16,7 @@ export default function ResumeName(props: { className?: string }) {
                     </div>
                 </GridContent>
             </GridContentWrapper>
-            <div className="mr-12 px-3 py-2 text-xs font-medium tracking-widest bg-yellow-300 uppercase">
+            <div className="mr-12 px-3 py-2 text-xs font-medium tracking-widest bg-yellow-300 uppercase lg:mr-0">
                 Front-end Web Developer
             </div>
         </div>

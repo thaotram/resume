@@ -5,7 +5,7 @@ import { faAward } from '@fortawesome/free-solid-svg-icons';
 export default function ResumeAward(props: { className?: string }) {
     return (
         <GridContentWrapper title="award" className={props.className}>
-            <GridContent type={faAward}>
+            <GridContent type={faAward} size='base'>
                 <div className="text-base font-semibold">04/2016</div>
             </GridContent>
             <GridContent>

@@ -1,10 +1,11 @@
 import GridContentWrapper from '../Utils/GridContentWrapper';
 import GridContent from '../Utils/GridContent';
+import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 
 export default function ResumeEducation(props: { className?: string }) {
     return (
         <GridContentWrapper title="EDUCATION" className={props.className}>
-            <GridContent>
+            <GridContent type={faUserGraduate} size="base">
                 <div className="text-base font-semibold">
                     UNIVERSITY OF INFORMATION TECHNOLOGY (UIT)
                 </div>

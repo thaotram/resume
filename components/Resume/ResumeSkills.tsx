@@ -1,33 +1,32 @@
 import GridContentWrapper from '../Utils/GridContentWrapper';
 import GridContent from '../Utils/GridContent';
 import ProgressBar from '../Utils/ProgressBar';
+import { faCode, faHashtag } from '@fortawesome/free-solid-svg-icons';
 
 export default function ResumeSkill(props: { className?: string }) {
     return (
         <GridContentWrapper title="skills" className={props.className}>
-            <GridContent type="dot">
+            <GridContent type={faHashtag} size="base">
                 <div className="text-base font-semibold tracking-widest uppercase">
                     Profressional
                 </div>
-                <ProgressBar
-                    content="HTML, CSS, JS, Bootstrap, Tailwind"
-                    value={80}
-                ></ProgressBar>
-                <ProgressBar
-                    content="C#, React, TypeScipt"
-                    value={80}
-                ></ProgressBar>
+
                 <ProgressBar
                     content="Logical thinking and creative"
                     value={80}
-                ></ProgressBar>
-                <ProgressBar content="Office" value={90}></ProgressBar>
-                <ProgressBar content="Japanese" value={60}></ProgressBar>
+                />
+                <ProgressBar content="Office" value={90} />
+                <ProgressBar content="Japanese" value={50} />
             </GridContent>
-            <GridContent type="dot">
+            <GridContent type={faCode} size="base">
                 <div className="text-base font-semibold tracking-widest uppercase">
                     technical
                 </div>
+                <ProgressBar
+                    content="HTML, CSS, JS, Bootstrap, Tailwind"
+                    value={70}
+                />
+                <ProgressBar content="C#, React, TypeScipt" value={70} />
             </GridContent>
         </GridContentWrapper>
     );
