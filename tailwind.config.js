@@ -12,6 +12,15 @@ module.exports = {
             xl: '1280px',
         },
         extend: {
+            colors: {
+                'yellow-10': '#fef9ed',
+                dark: '#0d1117',
+                name: '#f0f6fc',
+                header: '#c9d1d9',
+                content: '#8b949e',
+                line: '#21262d',
+                orange: '#f4ab41',
+            },
             container: {
                 center: true,
                 padding: {
