@@ -1,1 +1,11 @@
-//
+body {
+    @apply bg-gray-300;
+    @apply tracking-wider;
+    @apply text-gray-800;
+
+    background-color: #ccc;
+
+    &.dark {
+        background-color: #555a60;
+    }
+}
