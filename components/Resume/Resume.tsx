@@ -10,11 +10,13 @@ import ResumeSkill from './ResumeSkills';
 import ResumeAward from './ResumeAward';
 import ResumeInterests from './ResumeInterests';
 import ResumeReferences from './ResumeReferences';
+import ThemeToggle from '../Utils/ThemeToggle';
 
 export default function Resume() {
     return (
         <div className="container">
             <div className={styles.resume}>
+                <ThemeToggle className={styles.theme} />
                 <div className={styles.content}>
                     <ResumeName className={styles.name} />
                     <ResumeAvatar className={styles.avatar} />

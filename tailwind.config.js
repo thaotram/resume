@@ -2,7 +2,7 @@ const plugin = require('tailwindcss/plugin');
 
 module.exports = {
     purge: ['./pages/**/*.{jsx,tsx}', './components/**/*.{jsx,tsx}'],
-    darkMode: false, // or 'media' or 'class'
+    darkMode: 'class', // or 'media' or 'class'
     theme: {
         screens: {
             xs: '420px',
