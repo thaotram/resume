@@ -5,5 +5,9 @@
     &-title {
         @apply col-span-2 mb-4;
         @apply text-lg font-bold tracking-title uppercase;
+
+        :global(.dark) & {
+            @apply text-header;
+        }
     }
 }
