@@ -1,6 +1,7 @@
 .resume {
     @apply bg-yellow-10 shadow-md;
-    @apply grid;
+    @apply grid relative;
+
     grid-template-areas:
         'name'
         'avatar'
@@ -14,7 +15,6 @@
         'references';
 
     @screen sm {
-        grid-template-columns: 4fr 3fr;
         grid-template-areas:
             'name name'
             'contact avatar'
@@ -25,10 +25,10 @@
             'award award'
             'interests interests'
             'references references';
+        grid-template-columns: 4fr 3fr;
     }
 
     @screen md {
-        grid-template-columns: 3.5fr 0.5fr 3fr;
         grid-template-areas:
             'name name name'
             'contact contact avatar'
@@ -38,11 +38,12 @@
             'skill skill skill'
             'award award award'
             'interests references references';
+        grid-template-columns: 3.5fr 0.5fr 3fr;
     }
 
     @screen lg {
-        grid-template-columns: 2.25fr 4.75fr;
         grid-template-areas: none;
+        grid-template-columns: 2.25fr 4.75fr;
 
         .content {
             @apply block;
@@ -51,6 +52,11 @@
 
     @screen xl {
         grid-template-columns: 2.5fr 5.5fr;
+    }
+
+    :global(.dark) & {
+        @apply text-content;
+        @apply bg-dark;
     }
 }
 
@@ -75,6 +81,10 @@
 }
 .experience {
     grid-area: experience;
+
+    span {
+        @apply text-orange;
+    }
 }
 .skill {
     grid-area: skill;

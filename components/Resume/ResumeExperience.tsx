@@ -6,14 +6,18 @@ export default function ResumeExperience(props: { className?: string }) {
         <GridContentWrapper title="Experience" className={props.className}>
             <GridContent type="dot">
                 <div className="justify-between text-base font-semibold md:flex">
-                    <div>UNIVERSITY OF INFORMATION TECHNOLOGY</div>
+                    <div className="dark:text-header">
+                        UNIVERSITY OF INFORMATION TECHNOLOGY
+                    </div>
                     <div>2015-2020</div>
                 </div>
                 <div>Student</div>
             </GridContent>
             <GridContent type="slash">
                 <div className="justify-between font-semibold md:flex">
-                    <div>Hotel Management Application</div>
+                    <div className="dark:text-header">
+                        Hotel Management Application
+                    </div>
                     <div>09/2018 - 01/2020</div>
                 </div>
                 <p>
@@ -35,7 +39,7 @@ export default function ResumeExperience(props: { className?: string }) {
             </GridContent>
             <GridContent type="slash">
                 <div className="justify-between font-semibold md:flex">
-                    <div>Personal Blog</div>
+                    <div className="dark:text-header">Personal Blog</div>
                     <div>04/2017 - 06/2017</div>
                 </div>
                 <p>
@@ -57,7 +61,9 @@ export default function ResumeExperience(props: { className?: string }) {
             </GridContent>
             <GridContent type="slash">
                 <div className="justify-between font-semibold md:flex">
-                    <div>Disney's Aladdin 1993</div>
+                    <div className="dark:text-header">
+                        Disney's Aladdin 1993
+                    </div>
                     <div>10/2017 - 12/2017</div>
                 </div>
                 <p>
@@ -73,13 +79,13 @@ export default function ResumeExperience(props: { className?: string }) {
             </GridContent>
             <GridContent type="dot">
                 <div className="justify-between text-base font-semibold md:flex">
-                    <div>ALT IELTS Gia Su</div>
+                    <div className="dark:text-header">ALT IELTS Gia Su</div>
                     <div>08/2019 - 04/2020</div>
                 </div>
                 <div>Internship</div>
             </GridContent>
             <GridContent type="slash">
-                <div className="font-semibold">
+                <div className="dark:text-header font-semibold">
                     Official websites of the company
                 </div>
                 <p>

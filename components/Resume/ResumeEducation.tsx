@@ -6,7 +6,7 @@ export default function ResumeEducation(props: { className?: string }) {
     return (
         <GridContentWrapper title="EDUCATION" className={props.className}>
             <GridContent type={faUserGraduate} size="base">
-                <div className="text-base font-semibold">
+                <div className="dark:text-header text-base font-semibold">
                     UNIVERSITY OF INFORMATION TECHNOLOGY (UIT)
                 </div>
                 <div>Software Engineering</div>

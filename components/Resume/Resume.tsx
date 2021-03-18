@@ -16,7 +16,7 @@ export default function Resume() {
     return (
         <div className="container">
             <div className={styles.resume}>
-                <ThemeToggle className={styles.theme} />
+                <ThemeToggle />
                 <div className={styles.content}>
                     <ResumeName className={styles.name} />
                     <ResumeAvatar className={styles.avatar} />
