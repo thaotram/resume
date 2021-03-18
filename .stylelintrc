@@ -1,33 +1,9 @@
 {
-    "plugins": ["stylelint-order", "stylelint-config-rational-order/plugin"],
-    "extends": [
-        "stylelint-config-standard",
-        "stylelint-config-rational-order",
-        "stylelint-config-prettier"
-    ],
+    "extends": ["@culur/stylelint-config"],
     "rules": {
-        "rule-empty-line-before": ["always", { "except": ["first-nested"] }],
-        "at-rule-no-unknown": [
+        "selector-pseudo-class-no-unknown": [
             true,
-            {
-                "ignoreAtRules": [
-                    "at-root",
-                    "define-mixin",
-                    "each",
-                    "extends",
-                    "mixin",
-                    "screen",
-                    "tailwind"
-                ]
-            }
-        ],
-        "at-rule-empty-line-before": [
-            "always",
-            {
-                "except": ["first-nested", "blockless-after-blockless"]
-            }
-        ],
-        "selector-type-no-unknown": [true, { "ignoreTypes": ["/^^/"] }],
-        "indentation": 4
+            { "ignorePseudoClasses": ["global"] }
+        ]
     }
 }
