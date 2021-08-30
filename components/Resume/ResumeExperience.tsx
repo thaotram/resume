@@ -85,7 +85,7 @@ export default function ResumeExperience(props: { className?: string }) {
                 <div>Internship</div>
             </GridContent>
             <GridContent type="slash">
-                <div className="dark:text-header font-semibold">
+                <div className="font-semibold dark:text-header">
                     Official websites of the company
                 </div>
                 <p>
@@ -97,6 +97,46 @@ export default function ResumeExperience(props: { className?: string }) {
                     Front-End &{' '}
                     <span className="font-semibold">ASP.NET/Razor</span> in the
                     Back-End.
+                </p>
+            </GridContent>
+            <GridContent type="dot">
+                <div className="justify-between text-base font-semibold md:flex">
+                    <div className="dark:text-header">Midota</div>
+                    <div>03/2021 - 09/2021</div>
+                </div>
+                <div>Junior</div>
+            </GridContent>
+            <GridContent type="slash">
+                <div className="font-semibold dark:text-header">
+                    Omenu - Restaurant management
+                </div>
+                <p>
+                    This is a complex app for restaurant management. The web
+                    version uses{' '}
+                    <span className="font-semibold">React/Redux Saga</span> as
+                    the main framework for the project.
+                </p>
+                <p className="italic">
+                    ◦ In this project, I do maintenance and develop new features
+                    for the front-end.
+                </p>
+            </GridContent>{' '}
+            <GridContent type="slash">
+                <div className="font-semibold dark:text-header">
+                    Willraise - Tax calculator
+                </div>
+                <p>
+                    This is an web application written for Japanese customers.
+                </p>
+                <p>
+                    The user will enter the required values and the application
+                    will send the tax results to their email address.
+                </p>
+                <p className="italic">
+                    ◦ In this project, I write most of the project's backend in{' '}
+                    <span className="font-semibold">PHP/Laravel</span> and
+                    support writing the front-end in{' '}
+                    <span className="font-semibold">Vue</span>.
                 </p>
             </GridContent>
         </GridContentWrapper>
