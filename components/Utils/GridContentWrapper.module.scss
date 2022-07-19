@@ -1,10 +1,10 @@
 .grid-content {
-    @apply grid-cols-content grid;
+    @apply grid grid-cols-content;
     @apply mx-12 my-6 lg:mt-12;
 
     &-title {
         @apply col-span-2 mb-4;
-        @apply text-lg font-bold tracking-title uppercase;
+        @apply text-lg font-bold uppercase tracking-title;
 
         :global(.dark) & {
             @apply text-header;

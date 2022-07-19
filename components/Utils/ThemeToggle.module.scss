@@ -1,6 +1,6 @@
 .toggle {
     @apply absolute;
-    @apply h-8 w-17 right-12 top-10;
+    @apply right-12 top-10 h-8 w-17;
     @apply rounded-full;
     @apply transition-all duration-700;
     @apply bg-orange;
@@ -13,17 +13,17 @@
 
 .inner {
     @apply absolute;
-    @apply h-6 w-6 top-1 left-1;
+    @apply top-1 left-1 h-6 w-6;
     @apply rounded-full;
     @apply bg-white;
     @apply transition-all duration-700;
     @apply overflow-hidden;
 
     > svg {
-        @apply transition-all duration-700;
-        @apply absolute p-1 h-6;
-
         fill: theme('colors.orange');
+
+        @apply transition-all duration-700;
+        @apply absolute h-6 p-1;
 
         :global(.dark) & {
             fill: theme('colors.gray.800');
@@ -36,6 +36,7 @@
                 @apply left-6;
             }
         }
+
         &.moon {
             @apply -left-6;
 

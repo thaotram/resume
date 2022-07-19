@@ -1,7 +1,4 @@
 .resume {
-    @apply bg-yellow-10 shadow-md;
-    @apply grid relative;
-
     grid-template-areas:
         'name'
         'avatar'
@@ -13,6 +10,9 @@
         'award'
         'interests'
         'references';
+
+    @apply bg-yellow-10 shadow-md;
+    @apply relative grid;
 
     @screen sm {
         grid-template-areas:
@@ -67,18 +67,23 @@
 .name {
     grid-area: name;
 }
+
 .avatar {
     grid-area: avatar;
 }
+
 .contact {
     grid-area: contact;
 }
+
 .profile {
     grid-area: profile;
 }
+
 .education {
     grid-area: education;
 }
+
 .experience {
     grid-area: experience;
 
@@ -86,15 +91,19 @@
         @apply text-orange;
     }
 }
+
 .skill {
     grid-area: skill;
 }
+
 .award {
     grid-area: award;
 }
+
 .interests {
     grid-area: interests;
 }
+
 .references {
     grid-area: references;
 }

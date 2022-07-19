@@ -18,7 +18,7 @@ export default function GridContent(props: {
                     typeof props.type === 'string' && styles[props.type],
                     props.size === 'base' && styles.base,
                     props.position === 'bottom' && styles.bottom,
-                    props.noLine && styles.noLine,
+                    props.noLine && styles['no-line'],
                 )}
             >
                 {typeof props.type !== 'string' && (
