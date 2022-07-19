@@ -1,7 +1,6 @@
-const plugin = require('tailwindcss/plugin');
-
+/** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
-    purge: ['./pages/**/*.{jsx,tsx}', './components/**/*.{jsx,tsx}'],
+    content: ['./pages/**/*.{jsx,tsx}', './components/**/*.{jsx,tsx}'],
     darkMode: 'class', // or 'media' or 'class'
     theme: {
         screens: {
@@ -47,22 +46,4 @@ module.exports = {
             },
         },
     },
-    variants: {
-        extend: {
-            padding: ['important'],
-            margin: ['important'],
-        },
-    },
-    plugins: [
-        plugin(({ addVariant }) => {
-            addVariant('important', ({ container }) => {
-                container.walkRules(rule => {
-                    rule.selector = `.\\!${rule.selector.slice(1)}`;
-                    rule.walkDecls(decl => {
-                        decl.important = true;
-                    });
-                });
-            });
-        }),
-    ],
 };
