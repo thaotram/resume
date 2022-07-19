@@ -21,9 +21,9 @@ export default function ResumeContact(props: { className?: string }) {
             </GridContent>
             <GridContent type={faMapMarkerAlt} position="bottom">
                 <div>
-                    47/24/3A, Bui Dinh Tuy, Ward 24
-                    <br />
-                    Binh Thanh District, HCM City
+                    17 Hung Thanh Hamlet,
+                    <br /> Hung Loc Village, Thong Nhat District, Dong Nai
+                    Province
                 </div>
             </GridContent>
         </GridContentWrapper>

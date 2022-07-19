@@ -6,6 +6,39 @@ export default function ResumeExperience(props: { className?: string }) {
         <GridContentWrapper title="Experience" className={props.className}>
             <GridContent type="dot">
                 <div className="justify-between text-base font-semibold md:flex">
+                    <div className="dark:text-header">Freelancer</div>
+                    <div>10/2021 - 07/2022</div>
+                </div>
+            </GridContent>
+            <GridContent type="slash">
+                <div className="font-semibold dark:text-header">TimeDo</div>
+                <p>
+                    This is a utility that supports time counting and reminders.
+                </p>
+                <p>
+                    The app written in{' '}
+                    <span className="font-semibold">Flutter</span>, using{' '}
+                    <span className="font-semibold">Functional widget</span>,{' '}
+                    <span className="font-semibold">Flutter Hook</span> and{' '}
+                    <span className="font-semibold">Riverpod</span>.
+                </p>
+                <p>
+                    We also tried using both{' '}
+                    <span className="font-semibold">Hive</span> and{' '}
+                    <span className="font-semibold">Isar</span> as DBMS for the
+                    application.
+                </p>
+                <p className="italic">
+                    ◦ In this project, I designed the layout in{' '}
+                    <span className="font-semibold">Figma</span> and built the
+                    UI/logic.
+                </p>{' '}
+                <p className="italic">
+                    ◦ The app is still in development and not released yet.
+                </p>
+            </GridContent>
+            <GridContent type="dot">
+                <div className="justify-between text-base font-semibold md:flex">
                     <div className="dark:text-header">Midota</div>
                     <div>03/2021 - 09/2021</div>
                 </div>
@@ -97,6 +130,26 @@ export default function ResumeExperience(props: { className?: string }) {
                     Furthermore, I had to write more than200 unit tests to make
                     sure every query or mutation I wrote always returns the
                     desired response.
+                </p>
+            </GridContent>
+            <GridContent type="slash">
+                <div className="justify-between font-semibold md:flex">
+                    <div className="dark:text-header">Where is your money?</div>
+                    <div>03/2018 - 07/2018</div>
+                </div>
+                <p>
+                    Be inspired by Money Lover. It's an{' '}
+                    <span className="font-semibold">Android</span> application
+                    wrote with <span className="font-semibold">Java</span>.
+                </p>
+                <p>
+                    Using{' '}
+                    <span className="font-semibold">Speech Recognition</span>{' '}
+                    like Siri or Google Now (using Google API).
+                </p>
+                <p>It allows users to record their deals easier.</p>
+                <p className="italic">
+                    ◦ The app was released on Google Play as a preview version.
                 </p>
             </GridContent>
             <GridContent type="slash">

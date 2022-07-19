@@ -16,7 +16,7 @@ export default function ResumeSkill(props: { className?: string }) {
                     value={80}
                 />
                 <ProgressBar content="Office" value={90} />
-                <ProgressBar content="Japanese" value={70} />
+                <ProgressBar content="Japanese" value={60} />
             </GridContent>
             <GridContent type={faCode} size="base">
                 <div className="text-base font-semibold uppercase tracking-widest dark:text-header">

@@ -17,7 +17,7 @@ export default function ResumeName(props: { className?: string }) {
                 </GridContent>
             </GridContentWrapper>
             <div className="mr-12 bg-orange px-3 py-2 text-xs font-medium uppercase tracking-widest dark:text-blue-50 lg:mr-0">
-                Front-end Web Developer
+                Front-end Developer
             </div>
         </div>
     );
