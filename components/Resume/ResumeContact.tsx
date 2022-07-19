@@ -1,7 +1,7 @@
 import {
     faEnvelope,
     faMapMarkerAlt,
-    faPhoneAlt,
+    faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 import GridContent from '../Utils/GridContent';
 import GridContentWrapper from '../Utils/GridContentWrapper';
@@ -11,7 +11,7 @@ import cn from 'classnames';
 export default function ResumeContact(props: { className?: string }) {
     return (
         <GridContentWrapper className={cn(styles.contact, props.className)}>
-            <GridContent type={faPhoneAlt} position="bottom">
+            <GridContent type={faPhone} position="bottom">
                 <a href="tel:0343391712">034-339-1712</a>
             </GridContent>
             <GridContent type={faEnvelope} position="bottom">

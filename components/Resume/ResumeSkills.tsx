@@ -7,8 +7,8 @@ export default function ResumeSkill(props: { className?: string }) {
     return (
         <GridContentWrapper title="skills" className={props.className}>
             <GridContent type={faHashtag} size="base">
-                <div className="dark:text-header text-base font-semibold tracking-widest uppercase">
-                    Profressional
+                <div className="text-base font-semibold uppercase tracking-widest dark:text-header">
+                    Professional
                 </div>
 
                 <ProgressBar
@@ -16,17 +16,19 @@ export default function ResumeSkill(props: { className?: string }) {
                     value={80}
                 />
                 <ProgressBar content="Office" value={90} />
-                <ProgressBar content="Japanese" value={50} />
+                <ProgressBar content="Japanese" value={70} />
             </GridContent>
             <GridContent type={faCode} size="base">
-                <div className="dark:text-header text-base font-semibold tracking-widest uppercase">
+                <div className="text-base font-semibold uppercase tracking-widest dark:text-header">
                     technical
                 </div>
+                <ProgressBar content="Dart, Flutter" value={65} />
                 <ProgressBar
-                    content="HTML, CSS, JS, Bootstrap, Tailwind"
+                    content="React, Vue, Bootstrap, Tailwind, TypeScript"
                     value={70}
                 />
-                <ProgressBar content="C#, React, TypeScipt" value={70} />
+                <ProgressBar content="C#, Go-lang, php" value={50} />
+                <ProgressBar content="Figma, PhotoShop" value={90} />
             </GridContent>
         </GridContentWrapper>
     );
