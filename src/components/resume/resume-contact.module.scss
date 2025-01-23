@@ -1,0 +1,9 @@
+.contact {
+  @apply text-right;
+  @apply sm:mr-0;
+  @apply md:self-end;
+
+  > div:first-child::after {
+    @apply -top-24 md:-top-48 lg:-top-24;
+  }
+}

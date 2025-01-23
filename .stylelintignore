@@ -258,15 +258,7 @@ auto-imports.d.ts
 components.d.ts
 typed-router.d.ts
 
-#! ----- ----- ----- ----- ----- Prettier Ignore ----- ----- ----- ----- ----- !#
-
-# style (ignore sass)
-*.sass
-
 #! ----- ----- ----- ----- ----- Workspace ----- ----- ----- ----- ----- !#
-
-# workspace
-.prettierignore.project
-
-# generated
-apps/*/src/**/generated
+# projects
+# ignore projects that have custom lint and test scripts
+apps/*/**

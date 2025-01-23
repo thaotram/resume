@@ -1,0 +1,35 @@
+{
+  "extends": "@culur/config-typescript",
+  "compilerOptions": {
+    //? Language and Environment
+    "moduleDetection": "force",
+
+    //? Modules
+    "baseUrl": ".",
+    "module": "ESNext",
+    "types": ["node"],
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": [
+    ".*rc.js",
+    ".*rc.mjs",
+    ".*rc.cjs",
+
+    "*.config.*.js",
+    "*.config.*.cjs",
+    "*.config.*.mjs",
+
+    "*.config.*.ts",
+    "*.config.*.cts",
+    "*.config.*.mts",
+
+    "*.config.js",
+    "*.config.cjs",
+    "*.config.mjs",
+
+    "*.config.ts",
+    "*.config.cts",
+    "*.config.mts"
+  ]
+}

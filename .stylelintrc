@@ -1,9 +1,3 @@
 {
-    "extends": ["@culur/stylelint-config"],
-    "rules": {
-        "selector-pseudo-class-no-unknown": [
-            true,
-            { "ignorePseudoClasses": ["global"] }
-        ]
-    }
+  "extends": ["@culur/config-stylelint/tailwind-sass"]
 }

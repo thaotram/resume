@@ -1,21 +1,14 @@
 {
-    "files.exclude": {
-        "**/.git": true,
-        "**/.vscode": true,
-        "**/.next": true,
-        "**/build": true,
-        "**/node_modules": true,
-        "**/yarn-error.log": true
-    },
-    "files.watcherExclude": {
-        "**/build/**": true
-    },
-    "files.associations": {
-        ".czrc": "json"
-    },
-    "cSpell.userWords": [], // only use words from .cspell.json
-    "cSpell.enabled": true,
-    "editor.formatOnSave": true,
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "typescript.enablePromptUseWorkspaceTsdk": true
+  //! typescript
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  //! eslint
+  "eslint.options": {
+    "overrideConfigFile": "eslint.config.mts"
+  },
+
+  //! tailwind
+  "tailwindCSS.experimental.classRegex": [
+    "'([^']*)'" // match all string
+  ]
 }

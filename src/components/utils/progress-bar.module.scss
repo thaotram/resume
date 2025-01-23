@@ -1,0 +1,14 @@
+.progress {
+  @apply flex w-full overflow-hidden;
+  min-width: 9rem;
+  height: 8px;
+  background-color: rgba(#f4ab41, 0.3);
+
+  :global(.dark) & {
+    background-color: rgba(#f4ab41, 0.2);
+  }
+
+  &-bar {
+    background-color: rgba(#f4ab41, 0.7);
+  }
+}
