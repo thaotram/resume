@@ -18,8 +18,8 @@ export default function ResumeContact({ className }: { className?: string }) {
       </GridContent>
       <GridContent type={faMapMarkerAlt} position="bottom">
         <div>
-          17 Hung Thanh Hamlet,
-          <br /> Hung Loc Village, Thong Nhat District, Dong Nai Province
+          Binh Thanh District,
+          <br /> Ho Chi Minh City
         </div>
       </GridContent>
     </GridContentWrapper>

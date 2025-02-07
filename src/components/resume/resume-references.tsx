@@ -1,4 +1,4 @@
-import { faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFeatherAlt } from '@fortawesome/free-solid-svg-icons';
 import GridContent from '../utils/grid-content';
 import GridContentWrapper from '../utils/grid-content-wrapper';
@@ -30,16 +30,6 @@ export default function ResumeReferences({
           https://thaotram.netlify.app
         </a>
       </GridContent>{' '}
-      <GridContent type={faGooglePlay} noLine>
-        <span className="font-semibold">Where is your money? </span>
-        <a
-          href="https://play.google.com/store/apps/details?id=uit.money"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          https://play.google.com/store/apps/details?id=uit.money
-        </a>
-      </GridContent>
     </GridContentWrapper>
   );
 }

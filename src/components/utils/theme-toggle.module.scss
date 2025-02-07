@@ -1,6 +1,6 @@
 .toggle {
   @apply absolute;
-  @apply right-12 top-10 h-8 w-17;
+  @apply right-10 top-5 lg:top-10 h-8 w-17;
   @apply rounded-full;
   @apply transition-all duration-700;
   @apply bg-orange;

@@ -15,18 +15,18 @@ export default function Resume() {
   return (
     <div className="container">
       <div className={styles.resume}>
-        <ThemeToggle />
+        <ThemeToggle/>
         <div className={styles.content}>
           <ResumeName className={styles.name} />
-          <ResumeAvatar className={styles.avatar} />
-          <ResumeContact className={styles.contact} />
+          {/* <ResumeAvatar className={styles.avatar} /> */}
+          <ResumeContact className={cn(styles.contact, 'mr-10 lg:!mt-4 lg:!mr-0')} />
 
           <ResumeEducation className={cn(styles.education, 'lg:!mr-0')} />
           <ResumeAward className={cn(styles.award, 'lg:!mr-0')} />
           <ResumeInterests className={cn(styles.interests, 'lg:!mr-0')} />
         </div>
         <div className={styles.content}>
-          <ResumeProfile className={cn(styles.profile, 'lg:!mt-24')} />
+          <ResumeProfile className={cn(styles.profile, 'lg:!mt-20')} />
           <ResumeExperience className={styles.experience} />
           <ResumeSkill className={cn(styles.skill)} />
           <ResumeReferences className={styles.references} />

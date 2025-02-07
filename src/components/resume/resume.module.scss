@@ -21,7 +21,8 @@
   @screen sm {
     grid-template-areas:
       'name name'
-      'contact avatar'
+    //   'contact avatar'
+      'contact contact'
       'profile profile'
       'education education'
       'experience experience'
@@ -35,7 +36,8 @@
   @screen md {
     grid-template-areas:
       'name name name'
-      'contact contact avatar'
+      'contact contact contact'
+    //   'contact contact avatar'
       'profile profile profile'
       'education education education'
       'experience experience experience'
