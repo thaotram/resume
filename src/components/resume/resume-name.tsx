@@ -16,7 +16,7 @@ export default function ResumeName({ className }: { className?: string }) {
         </GridContent>
       </GridContentWrapper>
       <div className="mr-10 bg-orange px-3 py-2 text-xs font-medium uppercase tracking-widest lg:mr-0 dark:text-blue-50">
-        Front-end Developer
+        Fullstack Developer
       </div>
     </div>
   );

@@ -115,10 +115,10 @@ export default function ResumeExperience({
           Willraise - Tax calculator
         </div>
         <p>
-          Led back-end development using{' '}
-          <span className="font-semibold">PHP/Laravel</span> and contributed to
-          front-end development with <span className="font-semibold">Vue</span>{' '}
-          for a tax calculation web application used by Japanese customers.
+          Contributed to back-end development using{' '}
+          <span className="font-semibold">PHP/Laravel</span> and front-end
+          development with <span className="font-semibold">Vue</span> for a tax
+          calculation web application used by Japanese customers.
         </p>
       </GridContent>
       <GridContent type="dot">

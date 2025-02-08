@@ -3,7 +3,7 @@
   @apply mx-10 my-5 lg:mt-10;
 
   &-title {
-    @apply col-span-2 mb-4;
+    @apply col-span-2 mb-2;
     @apply text-lg font-bold uppercase tracking-title;
 
     :global(.dark) & {
