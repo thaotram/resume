@@ -1,5 +1,4 @@
 import ThemeToggle from '../utils/theme-toggle';
-import ResumeAvatar from './resume-avatar';
 import ResumeAward from './resume-award';
 import ResumeContact from './resume-contact';
 import ResumeEducation from './resume-education';
@@ -13,13 +12,13 @@ import styles from './Resume.module.scss';
 
 export default function Resume() {
   return (
-    <div className="container">
+    <div>
       <div className={styles.resume}>
-        <ThemeToggle/>
         <div className={styles.content}>
           <ResumeName className={styles.name} />
-          {/* <ResumeAvatar className={styles.avatar} /> */}
-          <ResumeContact className={cn(styles.contact, 'mr-10 lg:!mt-4 lg:!mr-0')} />
+          <ResumeContact
+            className={cn(styles.contact, 'mr-10 lg:!mr-0 lg:!mt-4')}
+          />
 
           <ResumeEducation className={cn(styles.education, 'lg:!mr-0')} />
           <ResumeAward className={cn(styles.award, 'lg:!mr-0')} />
