@@ -1,4 +1,3 @@
-import ThemeToggle from '../utils/theme-toggle';
 import ResumeAward from './resume-award';
 import ResumeContact from './resume-contact';
 import ResumeEducation from './resume-education';

@@ -4,7 +4,7 @@ import styles from './resume-name.module.scss';
 
 export default function ResumeName({ className }: { className?: string }) {
   return (
-    <div className={cn('pt-10 text-right', className)}>
+    <div className={cn('text-right', className)}>
       <GridContentWrapper className={cn(styles.name)}>
         <GridContent>
           <div className="-mr-title text-lg font-medium tracking-title">

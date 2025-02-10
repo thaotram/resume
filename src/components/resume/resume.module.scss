@@ -1,6 +1,7 @@
 .resume {
-  @apply bg-yellow-10 p-3 shadow-md;
+  @apply bg-yellow-10 shadow-md;
   @apply relative grid;
+  @apply -space-x-8;
   grid-template-areas: none;
   grid-template-columns: 2.25fr 4.75fr;
 
@@ -10,12 +11,9 @@
   }
 
   .content {
-    @apply block;
+    @apply pb-6 pt-12;
+    @apply last:pr-8;
   }
-}
-
-.content {
-  @apply contents;
 }
 
 .name {
