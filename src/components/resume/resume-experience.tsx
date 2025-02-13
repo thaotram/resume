@@ -11,7 +11,7 @@ export default function ResumeExperience({
       <GridContent type="dot">
         <div className="justify-between text-base font-semibold md:flex">
           <div className="dark:text-header">Eton</div>
-          <div>08/2022 - now</div>
+          <div>08/2022 - present</div>
         </div>
       </GridContent>
       <GridContent type="slash">
